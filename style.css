@@ -2,7 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Mada&display=swap');
 
 *{
-   font-family: 'Mada'
+   font-family: 'Mada';
+  
 
 }
 header{
@@ -246,4 +247,92 @@ footer{
 }
 .bg-img:hover{
     cursor: pointer;
+}
+ /* ------tablet view --------- */
+@media screen and (max-width:1100px) {
+   
+.hero-section{
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           height:1340px;
+           align-items: center;
+           overflow: hidden;
+    }
+   .hero-text{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-left: 100px;
+      height: 600px
+   } 
+   .grid-sec{
+    display: grid;
+    grid-template-columns: 571px;
+    grid-template-rows: 259px 259px 671px;
+    gap:20px;
+    justify-content: center;
+    margin-top: 40px;
+}
+.item-3{
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column-start: 1;
+}
+
+}
+/*---------- mobile veiw------- */
+@media screen and (max-width:667px){
+    .hero-section{
+        margin-left:0px;
+    }
+    .hero-text{
+        padding-left: 10px;
+    }
+
+    .hero-img{
+        padding-right: 30px;
+        padding-left: 0px !important;
+        width: 300px;
+    }
+    .hero-img>img{
+        width:350px;
+    }
+    .hero-text>div>h1{
+        font-family: 'Aclonica';
+        font-size: 90px;
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-inline: auto;
+        
+    }
+    .card1{
+       
+        margin-right:0px;
+        margin-left: 0px;
+    }
+    .grid-sec{
+        display: grid;
+        grid-template-columns: 571px;
+        grid-template-rows: 259px 259px 671px;
+        gap:30px;
+        justify-content: center;
+        margin-top: 40px;
+    }
+    /* .item-1{
+        background-size: 100% 100%;
+    } */
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        height:1300px;
+        padding-left: 30px;
+    }
 }
